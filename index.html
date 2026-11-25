@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-slate-950 flex items-center justify-center text-white">
+    <main class="w-full max-w-md p-6 text-center">
+        <h1 class="text-4xl font-bold text-purple-400 mb-3">Tic Tac Toe</h1>
+        <p id="status" class="text-lg text-slate-300 mb-6">Player X's Turn</p>
+
+        <div id="board" class="grid grid-cols-3 gap-3" aria-label="Tic Tac Toe board"></div>
+
+        <section class="flex justify-around mt-8" aria-label="Scoreboard">
+            <div>
+                <p class="text-blue-400 font-semibold">Player X</p>
+                <p id="scoreX" class="text-3xl font-bold">0</p>
+            </div>
+            <div>
+                <p class="text-pink-400 font-semibold">Player O</p>
+                <p id="scoreO" class="text-3xl font-bold">0</p>
+            </div>
+        </section>
+
+        <button id="restart" class="mt-8 bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-xl font-semibold transition">
+            Restart Game
+        </button>
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+</html>
